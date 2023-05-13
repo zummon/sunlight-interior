@@ -1,6 +1,6 @@
 Modify your data in `./src/lib/services.json` to add, edit and remove the site pages.
 
-## Dev tools
+### Dev tools
 
 [UIkit](https://getuikit.com/)
 
@@ -14,6 +14,3 @@ Modify your data in `./src/lib/services.json` to add, edit and remove the site p
 
 [Photo by Nugroho Wahyu from Pexels](https://www.pexels.com/photo/brown-wooden-table-with-chair-3097112/)
 
----
-
-[Made by zummon](https://zummon.page/)
