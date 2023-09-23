@@ -1,4 +1,4 @@
-### [Codesandbox](https://codesandbox.io/p/github/zummon/sunlight-interior-sveltekit)
+
 
 - Modify your data in `./src/lib/services.json` to add, edit and remove the site pages.
 
