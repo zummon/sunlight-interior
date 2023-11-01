@@ -1,8 +1,8 @@
-export const load = async ({}) => {
-	const model = await import("../lib/model.json").then((xp) => xp.default);
-	let services = await import("../lib/services.json").then((xp) => xp.default);
+import services from '../lib/services.json'
+
+export const load = async ({ }) => {
 
 	return {
-		services: services.map((service) => ({ ...model, ...service })),
+		services,
 	};
 };

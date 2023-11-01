@@ -4,7 +4,7 @@ export const load = async ({ parent }) => {
 	let data = await parent();
 
 	return {
-		services: data.services.slice(0, 3),
+		services: data.services.filter((item) => item.featured),
 		title: "Sunlight Interior",
 		description: "Sapiente qui, enim quidem, aut corporis",
 	};
