@@ -14,7 +14,7 @@
 <div class="p-10 text-center">
 	<div class="flex items-baseline justify-center mb-10">
 		<h1 class="text-4xl lg:text-5xl xl:text-6xl">{data.title}</h1>
-		<span class="before:content-['—_'] text-gray-500">creative</span>
+		<span class="before:content-['—'] text-gray-500">creative</span>
 	</div>
 	<p class="text-2xl text-gray-500 max-w-2xl mx-auto">{data.description}</p>
 </div>

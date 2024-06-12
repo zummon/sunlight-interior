@@ -17,7 +17,7 @@
 <div class="p-10 text-center">
 	<div class="flex items-baseline justify-center mb-10">
 		<h1 class="text-3xl lg:text-4xl xl:text-5xl">{data.title}</h1>
-		<span class="before:content-['—_'] text-gray-500">{data.date}</span>
+		<span class="before:content-['—'] text-gray-500">{data.date}</span>
 	</div>
 	<p class="text-xl text-gray-500 max-w-lg mx-auto">{data.description}</p>
 </div>
