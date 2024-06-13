@@ -14,7 +14,7 @@
 <div class="p-10 text-center">
   <div class="flex items-baseline justify-center mb-10">
     <h1 class="text-4xl lg:text-5xl xl:text-6xl">{data.title}</h1>
-    <span class="before:content-['—'] text-gray-500">creative</span>
+    <span class="text-gray-500">—creative</span>
   </div>
   <p class="text-2xl text-gray-500 max-w-2xl mx-auto">{data.description}</p>
 </div>
@@ -29,7 +29,7 @@
         >
           <div class="flex flex-wrap items-baseline mb-4">
             <h3 class="text-2xl">{item.title}</h3>
-            <span class="before:content-['—'] text-gray-500">{item.date}</span>
+            <span class="text-gray-500">—{item.date}</span>
           </div>
           <p class="mb-4 text-gray-500">{item.description}</p>
           <div class="flex justify-end">
@@ -43,7 +43,7 @@
     </div>
   {/each}
   <div class="">
-    <div class="flex justify-center items-center w-full h-full border-2">
+    <div class="flex justify-center items-center w-full h-full">
       <span class="block pl-2 pr-1 py-1 lg:pl-4 text-lg text-gray-500">Total Price</span>
       <span class="block pr-2 pl-1 py-1 lg:pr-4 text-lg text-gray-500"
         >{data.services
