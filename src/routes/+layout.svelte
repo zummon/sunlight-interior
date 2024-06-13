@@ -1,5 +1,6 @@
 <script>
 	import "../app.css";
+	let { children } = $props()
 </script>
 
 <div class="flex flex-wrap justify-center items-center p-4">
@@ -17,7 +18,7 @@
 	</div>
 </div>
 
-<slot />
+{@render children()}
 
 <div
 	class="py-10 sm:py-20 lg:py-36 px-4 mx-auto container text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"

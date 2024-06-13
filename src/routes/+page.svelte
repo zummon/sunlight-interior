@@ -1,7 +1,7 @@
 <script>
-  export let data;
-
-  let carousel = 0;
+  let { data } = $props();
+  let carousel = $state(0);
+  let item = $derived(data.services[carousel]);
 </script>
 
 <svelte:head>
@@ -21,6 +21,39 @@
   <p class="text-2xl">{data.description}</p>
 </div>
 
+<div
+  class="bg-cover bg-center flex items-center justify-between"
+  style="height: 55vh; background-image: url({data.services[carousel].image.src});"
+>
+  <button
+    class=""
+    onclick={() => {
+      if (0 < carousel) {
+        carousel += -1;
+      }
+    }}
+  >
+    <!-- uikit icon -->
+    <svg width="40" height="40" viewBox="0 0 20 20"
+      ><polyline fill="none" stroke="#fff" stroke-width="1.03" points="13 16 7 10 13 4"></polyline></svg
+    >
+    <span class="sr-only">chevron-left</span>
+  </button>
+  <button
+    class=""
+    onclick={() => {
+      if (data.services.length - 1 > carousel) {
+        carousel += 1;
+      }
+    }}
+  >
+    <svg width="40" height="40" viewBox="0 0 20 20"
+      ><polyline fill="none" stroke="#fff" stroke-width="1.03" points="7 4 13 10 7 16"></polyline></svg
+    >
+    <span class="sr-only">chevron-right</span>
+  </button>
+</div>
+
 <div class="h-full w-full flex items-center justify-center">
   {#each data.services as item, index}
     <div class="">
@@ -29,7 +62,7 @@
           class="rounded-full inline-flex justify-center items-center w-9 h-9 {carousel == index
             ? 'text-black'
             : 'text-gray-300 hover:text-gray-400 focus:text-gray-400'}"
-          on:click={() => {
+          onclick={() => {
             carousel = index;
           }}
         >
@@ -48,28 +81,21 @@
   {/each}
 </div>
 
-{#each data.services as item, index}
-  <div class="shadow-md max-w-lg mx-auto {carousel == index ? 'block' : 'hidden'}">
-    <a class="block bg-white shadow-md p-4" href="/service/{item.path}">
-      <div class="flex flex-wrap items-baseline mb-4">
-        <h3 class="text-2xl">{item.title}</h3>
-        <span class="before:content-['—'] text-gray-500">{item.date}</span>
-      </div>
-      <p class="mb-4 text-gray-500">{item.description}</p>
-      <div class="flex justify-end">
-        <span class="block pl-2 pr-1 py-1 lg:pl-4 border-y-2 border-l-2 border-gray-500">Price</span>
-        <span class="block pr-2 pl-1 py-1 lg:pr-4 border-y-2 border-r-2 border-gray-500"
-          >{(item.price.labor + item.price.material).toLocaleString()}</span
-        >
-      </div>
-    </a>
-  </div>
-
-  <div
-    class="w-full bg-cover bg-center {carousel == index ? '' : 'hidden'}"
-    style="height: 65vh; background-image: url({item.image.src});"
-  ></div>
-{/each}
+<div class="shadow-md max-w-lg mx-auto">
+  <a class="block bg-white shadow-md p-4" href="/service/{item.path}">
+    <div class="flex flex-wrap items-baseline mb-4">
+      <h3 class="text-2xl">{item.title}</h3>
+      <span class="before:content-['—'] text-gray-500">{item.date}</span>
+    </div>
+    <p class="mb-4 text-gray-500">{item.description}</p>
+    <div class="flex justify-end">
+      <span class="block pl-2 pr-1 py-1 lg:pl-4 border-y-2 border-l-2 border-gray-500">Price</span>
+      <span class="block pr-2 pl-1 py-1 lg:pr-4 border-y-2 border-r-2 border-gray-500"
+        >{(item.price.labor + item.price.material).toLocaleString()}</span
+      >
+    </div>
+  </a>
+</div>
 
 <div class="flex items-center" id="about">
   <div class="w-5/6 sm:w-3/4 lg:w-1/2 flex-none p-4">
@@ -115,7 +141,7 @@
       </label>
       <label class="block mb-4">
         <span class="text-2xl block mb-2"> Your message </span>
-        <textarea class="block w-full" placeholder="I have a small house. How you can help?" rows="5" />
+        <textarea class="block w-full" placeholder="I have a small house. How you can help?" rows="5"></textarea>
       </label>
       <button class="px-10 py-4 bg-gray-900 text-white"> Send </button>
     </div>

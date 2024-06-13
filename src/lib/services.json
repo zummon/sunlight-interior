@@ -1,25 +1,38 @@
 [
 	{
 		"featured": true,
+		"path": "wooden-table",
+		"title": "Brown wooden table",
+		"date": "2021-07-17",
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos impedit asperiores ducimus placeat unde, distinctio consequuntur fuga sint possimus ut dolor corrupti quae nemo doloribus rerum mollitia quas! Excepturi, alias.",
+		"image": {
+			"alt": "Photo by Nugroho Wahyu from Pexels https://www.pexels.com/photo/brown-wooden-table-with-chair-3097112/",
+			"src": "https://i.imgur.com/na4MdN3.jpeg"
+		},
+		"images": [],
+		"price": {
+			"labor": 600,
+			"material": 3200
+		}
+	},
+	{
+		"featured": true,
 		"path": "arched-wall",
 		"title": "House with Arched Wall",
 		"date": "2021-07-17",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat maiores aspernatur, porro doloribus eum velit, repellendus dignissimos dolor ipsa provident neque, quam ex voluptatibus cumque nostrum sequi nihil dolorum.",
 		"image": {
-			"alt": "Photo by Rachel Claire from Pexels",
-			"src": "https://images.pexels.com/photos/5490909/pexels-photo-5490909.jpeg?w=1280",
-			"url": "https://www.pexels.com/photo/interior-details-of-modern-bar-with-wooden-furniture-and-arched-wall-5490909/"
+			"alt": "Photo by Rachel Claire from Pexels https://www.pexels.com/photo/interior-details-of-modern-bar-with-wooden-furniture-and-arched-wall-5490909/",
+			"src": "https://i.imgur.com/KwJxwQO.jpg"
 		},
 		"images": [
 			{
-				"alt": "Photo by Max Vakhtbovych from Pexels",
-				"src": "https://images.pexels.com/photos/6585764/pexels-photo-6585764.jpeg?w=1280",
-				"url": "https://www.pexels.com/photo/contemporary-apartment-with-cozy-sofa-and-minimalist-furniture-6585764/"
+				"alt": "Photo by Max Vakhtbovych from Pexels https://www.pexels.com/photo/contemporary-apartment-with-cozy-sofa-and-minimalist-furniture-6585764/",
+				"src": "https://i.imgur.com/7aMhZNV.jpg"
 			},
 			{
-				"alt": "Photo by Dayvison de Oliveira Silva from Pexels",
-				"src": "https://images.pexels.com/photos/5696287/pexels-photo-5696287.jpeg?w=1280",
-				"url": "https://www.pexels.com/photo/cozy-living-room-design-with-comfy-sofa-and-creative-lamp-5696287/"
+				"alt": "Photo by Dayvison de Oliveira Silva from Pexels https://www.pexels.com/photo/cozy-living-room-design-with-comfy-sofa-and-creative-lamp-5696287/",
+				"src": "https://i.imgur.com/gulpnN7.jpeg"
 			}
 		],
 		"price": {
@@ -28,24 +41,22 @@
 		}
 	},
 	{
-		"featured": true,
 		"path": "contemporary-apartment",
 		"title": "Contemporary apartment",
 		"date": "2021-07-17",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid totam possimus est. Tempore perspiciatis optio voluptates qui iusto distinctio officiis, consequatur sequi, atque possimus ullam explicabo porro obcaecati, illo aspernatur.",
 		"image": {
 			"alt": "Living Room",
-			"src": "https://images.pexels.com/photos/6585764/pexels-photo-6585764.jpeg?w=1280"
+			"src": "https://i.imgur.com/7aMhZNV.jpg"
 		},
 		"images": [
 			{
 				"alt": "Bedroom",
-				"src": "https://images.pexels.com/photos/5696287/pexels-photo-5696287.jpeg?w=1280"
+				"src": "https://i.imgur.com/gulpnN7.jpeg"
 			},
 			{
-				"alt": "Photo by Kien Tran from Pexels",
-				"src": "https://images.pexels.com/photos/5814952/pexels-photo-5814952.jpeg?w=1280",
-				"url": "https://www.pexels.com/photo/white-sofa-beside-black-table-5814952/"
+				"alt": "Photo by Kien Tran from Pexels https://www.pexels.com/photo/white-sofa-beside-black-table-5814952/",
+				"src": "https://i.imgur.com/JdN4l5M.jpeg"
 			}
 		],
 		"price": {
@@ -61,12 +72,12 @@
 		"description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magni incidunt veritatis alias at ut magnam, similique debitis necessitatibus. Deserunt officiis dolorum nisi quo nostrum doloribus magnam tempore laboriosam repellat.",
 		"image": {
 			"alt": "Bedroom",
-			"src": "https://images.pexels.com/photos/5696287/pexels-photo-5696287.jpeg?w=1280"
+			"src": "https://i.imgur.com/gulpnN7.jpeg"
 		},
 		"images": [
 			{
 				"alt": "house-table-luxury",
-				"src": "https://images.pexels.com/photos/5814952/pexels-photo-5814952.jpeg?w=1280"
+				"src": "https://i.imgur.com/JdN4l5M.jpeg"
 			}
 		],
 		"price": {
@@ -81,28 +92,12 @@
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sunt eveniet, a quam saepe architecto dolorem esse eos, in id, error dolores. Odio fuga quis nesciunt voluptas delectus nihil. Suscipit!",
 		"image": {
 			"alt": "house-table-luxury",
-			"src": "https://images.pexels.com/photos/5814952/pexels-photo-5814952.jpeg?w=1280"
+			"src": "https://i.imgur.com/JdN4l5M.jpeg"
 		},
 		"images": [],
 		"price": {
 			"labor": 620,
 			"material": 3000
-		}
-	},
-	{
-		"path": "wooden-table",
-		"title": "Brown wooden table",
-		"date": "2021-07-17",
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos impedit asperiores ducimus placeat unde, distinctio consequuntur fuga sint possimus ut dolor corrupti quae nemo doloribus rerum mollitia quas! Excepturi, alias.",
-		"image": {
-			"alt": "Photo by Nugroho Wahyu from Pexels",
-			"src": "https://images.pexels.com/photos/3097112/pexels-photo-3097112.jpeg?w=1280",
-			"url": "https://www.pexels.com/photo/brown-wooden-table-with-chair-3097112/"
-		},
-		"images": [],
-		"price": {
-			"labor": 600,
-			"material": 3200
 		}
 	}
 ]
