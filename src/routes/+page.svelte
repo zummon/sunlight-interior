@@ -80,12 +80,12 @@
   {/each}
 </div>
 
-<div class="bg-white shadow-md p-4">
-  <a class="flex flex-wrap items-baseline mb-4" href="/service/{occur.path}">
+<div class="bg-white shadow-md p-4 text-center">
+  <a class="flex flex-wrap justify-center items-baseline mb-4" href="/service/{occur.path}">
     <h3 class="text-2xl">{occur.title}</h3>
     <span class="text-gray-500">—{(occur.price.labor + occur.price.material).toLocaleString()}</span>
   </a>
-  <p class="text-gray-500 md:columns-2">{occur.description}</p>
+  <p class="text-gray-500 max-w-lg mx-auto">{occur.description}</p>
 </div>
 
 <div class="flex items-center" id="about">
