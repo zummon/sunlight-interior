@@ -1,5 +1,6 @@
 <script>
   let { data } = $props();
+  let tags = $state([]);
 </script>
 
 <svelte:head>
@@ -16,11 +17,43 @@
     <h1 class="text-4xl lg:text-5xl xl:text-6xl">{data.title}</h1>
     <span class="text-gray-500">—creative</span>
   </div>
-  <p class="text-2xl text-gray-500 max-w-2xl mx-auto">{data.description}</p>
+  <p class="text-2xl text-gray-500 max-w-2xl mx-auto mb-4">{data.description}</p>
+  <div class="text-center">
+    {#each data.services.reduce((prev, curr) => {
+      curr.tags.forEach((tag) => {
+        if (!prev.includes(tag)) {
+          prev.push(tag);
+        }
+      });
+      return prev;
+    }, []) as tag}
+      <button
+        class={tags.includes(tag) ? "" : "text-gray-500"}
+        onclick={() => {
+          if (tags.includes(tag)) {
+            tags = tags.filter((o) => o != tag);
+          } else {
+            tags.push(tag);
+          }
+        }}>{tag}</button
+      > &nbsp;
+    {/each}
+  </div>
 </div>
 
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
-  {#each data.services as item, index (`service-${index}`)}
+  {#each data.services.filter((service) => {
+    if (tags.length == 0) {
+      return true;
+    }
+    let bl = false;
+    service.tags.forEach((tag) => {
+      if (tags.includes(tag)) {
+        bl = true;
+      }
+    });
+    return bl;
+  }) as item}
     <div class="">
       <a class="block group relative" style="height: 50vh" href="/service/{item.path}">
         <img class="h-full w-full object-cover block absolute" src={item.image.src} alt={item.image.alt} />

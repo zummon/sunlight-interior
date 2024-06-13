@@ -3,6 +3,7 @@
 		"featured": true,
 		"path": "wooden-table",
 		"title": "Brown wooden table",
+		"tags":["Shop"],
 		"date": "2021-07-17",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos impedit asperiores ducimus placeat unde, distinctio consequuntur fuga sint possimus ut dolor corrupti quae nemo doloribus rerum mollitia quas! Excepturi, alias.",
 		"image": {
@@ -19,6 +20,7 @@
 		"featured": true,
 		"path": "arched-wall",
 		"title": "House with Arched Wall",
+		"tags":["Shop","Resident"],
 		"date": "2021-07-17",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat maiores aspernatur, porro doloribus eum velit, repellendus dignissimos dolor ipsa provident neque, quam ex voluptatibus cumque nostrum sequi nihil dolorum.",
 		"image": {
@@ -42,6 +44,7 @@
 	},
 	{
 		"path": "contemporary-apartment",
+		"tags":["Resident"],
 		"title": "Contemporary apartment",
 		"date": "2021-07-17",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid totam possimus est. Tempore perspiciatis optio voluptates qui iusto distinctio officiis, consequatur sequi, atque possimus ullam explicabo porro obcaecati, illo aspernatur.",
@@ -68,6 +71,7 @@
 		"featured": true,
 		"path": "cozy-living-room",
 		"title": "Cozy living room",
+		"tags":["Resident"],
 		"date": "2021-07-18",
 		"description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magni incidunt veritatis alias at ut magnam, similique debitis necessitatibus. Deserunt officiis dolorum nisi quo nostrum doloribus magnam tempore laboriosam repellat.",
 		"image": {
@@ -88,6 +92,7 @@
 	{
 		"path": "table-luxury",
 		"title": "Hotel House with Table Luxury",
+		"tags":["Resident"],
 		"date": "2021-07-18",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sunt eveniet, a quam saepe architecto dolorem esse eos, in id, error dolores. Odio fuga quis nesciunt voluptas delectus nihil. Suscipit!",
 		"image": {
