@@ -103,7 +103,8 @@
 	<div class="p-4">
 		<h3 class="text-2xl mb-5">Paragraph</h3>
 		<p class="text-gray-500">
-			<span class=""> Made by zummon (Teerapat Anantarattanachai) </span>
+			<span class=""> Made by Teerapat Anantarattanachai </span><br>
+			Something breaks, needs upgrade. Let me know
 		</p>
 	</div>
 
