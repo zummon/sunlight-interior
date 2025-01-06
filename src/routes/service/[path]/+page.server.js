@@ -1,11 +1,21 @@
+import services from '../../../lib/services.json'
+
 export const prerender = true;
 export const ssr = true;
 export const csr = false;
 
-export const load = async ({ parent, params }) => {
-	let data = await parent();
+export const entries = async () => {
+
+	return services.map(service => {
+		return {
+			path: service.path
+		}
+	})
+};
+
+export const load = async ({ params }) => {
 
 	return {
-		...data.services.find((service) => service.path == params.path),
+		...services.find((service) => service.path == params.path),
 	};
 };
