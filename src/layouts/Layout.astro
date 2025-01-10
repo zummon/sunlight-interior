@@ -1,5 +1,5 @@
 ---
-	let data = Astro.props
+	let { data } = Astro.props
 ---
 
 <!doctype html>
@@ -29,13 +29,16 @@
 </head>
 <body>
 	<div class="" style="font-family: 'MuseoModerno', sans-serif">
-
+		
 		<div class="flex flex-wrap justify-center items-center p-4">
 			<div class="">
 				<a class="inline-block p-4 text-xl" href="/">Home</a>
 			</div>
 			<div class="">
 				<a class="inline-block p-4 text-xl" href="/service">Service</a>
+			</div>
+			<div class="">
+				<a class="inline-block p-4 text-xl" href="/furniture">Furniture</a>
 			</div>
 			<div class="">
 				<a class="inline-block p-4 text-xl" href="/#about">About</a>
