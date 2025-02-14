@@ -30,7 +30,7 @@ import services from '../../../lib/services.json'
 	{[data.image, ...data.images].map((image, index) => {
 		return <>
 			<div class="">
-				<img class="block h-full w-full object-cover" style="height: 50vh" src={image.src} alt={image.alt} />
+				<img class="block h-full w-full object-contain object-center" style="height: 50vh" src={image.src} alt={image.alt} />
 			</div>
 		</>
 	})}
