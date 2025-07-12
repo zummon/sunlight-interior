@@ -1,18 +1,9 @@
 <script>
-	import services from "../../lib/services.json";
 	import Meta from "../../lib/Meta.svelte";
 
-	let data = {
-		title: "Service",
-		description: "Fugit quasi ullam reiciendis totam culpa.",
-	};
-	let tags = new Set();
-	services.forEach((service) => {
-		service.tags.forEach((tag) => {
-			tags.add(tag);
-		});
-	});
-	tags = [...tags];
+	let { data } = $props();
+
+	let tags = $state([])
 </script>
 
 <Meta {data}></Meta>
@@ -26,24 +17,26 @@
 		{data.description}
 	</p>
 	<div class="text-center">
-		{#each tags as tag}
-			<button class={tags.includes(tag) ? "text-gray-500" : ""}>
+		{#each data.tags as tag}
+			<button
+				class={tags.includes(tag) ? "text-gray-500" : ""}
+				onclick={() => {
+					if (tags.includes(tag)) {
+						tags = tags.filter((o) => o != tag);
+					} else {
+						tags.push(tag);
+					}
+				}}
+			>
 				{tag}
 			</button>{" "}
 			&nbsp;
 		{/each}
 	</div>
-	<!-- onclick={() => {
-	if (tags.includes(tag)) {
-		tags = tags.filter((o) => o != tag);
-	} else {
-		tags.push(tag);
-	}
-}} -->
 </div>
 
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
-	{#each services.filter((service) => {
+	{#each data.services.filter((service) => {
 		if (tags.length == 0) {
 			return true;
 		}
@@ -92,16 +85,16 @@
 	{/each}
 	<div class="">
 		<div class="flex justify-center items-center w-full h-full">
-			<span class="block pl-2 pr-1 py-1 lg:pl-4 text-lg text-gray-500"
-				>Total Price</span
-			>
-			<span class="block pr-2 pl-1 py-1 lg:pr-4 text-lg text-gray-500"
-				>{services
+			<span class="block pl-2 pr-1 py-1 lg:pl-4 text-lg text-gray-500">
+				Total Price
+			</span>
+			<span class="block pr-2 pl-1 py-1 lg:pr-4 text-lg text-gray-500">
+				{data.services
 					.reduce((prev, curr) => {
 						return prev + curr.price.labor + curr.price.material;
 					}, 0)
-					.toLocaleString()}</span
-			>
+					.toLocaleString()}
+			</span>
 		</div>
 	</div>
 </div>
