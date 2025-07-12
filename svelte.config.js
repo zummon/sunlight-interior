@@ -9,9 +9,9 @@ const config = {
 		output: {
 			bundleStrategy: 'single',
 		},
-		// paths: {
-		// 	relative: false,
-		// },
+		paths: {
+			relative: false,
+		},
 	}
 };
 

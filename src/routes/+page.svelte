@@ -1,7 +1,7 @@
 <script>
 	import services from "../lib/services.json";
 	import Carousel from "../lib/Carousel.svelte";
-	// import Meta from "../lib/Meta.svelte";
+	import Meta from "../lib/Meta.svelte";
 
 	let data = {
 		title: "Sunlight Interior",
@@ -9,7 +9,7 @@
 	};
 </script>
 
-<!-- <Meta {data}></Meta> -->
+<Meta {data}></Meta>
 
 <div class="p-10 text-center w-full flex-none">
 	<div class="flex flex-wrap items-baseline justify-center mb-10">

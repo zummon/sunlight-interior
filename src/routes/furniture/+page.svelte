@@ -1,5 +1,5 @@
 <script>
-	import Meta from "../../lib/Meta.astro";
+	import Meta from "../../lib/Meta.svelte";
 	import furnitures from "../../lib/furniture.json";
 
 	let data = { title: "", description: "" };
